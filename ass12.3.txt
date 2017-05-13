@@ -1,0 +1,28 @@
+1.uses of nosql databases:
+
+the nosql database when compared to the relational database possess supirior performance and are highly scalable.
+it can perform analysis on several data issues which can not be resolve by the relational databases.such as bulk structured,semistructured and unstructured data,
+
+it supports agile sprints, quick schema iteration, and frequent code pushes
+Object-oriented programming that is easy to use and flexible
+Geographically distributed scale-out architecture instead of expensive, monolithic architecture
+the following are the some of the NoSQL databases available:
+*mongoDB
+*Accumulo
+*Cassandra
+*Druid
+*HBase
+*Vertica
+*SAP HANA
+
+========================================================================================================================================================================================================
+2. Differences between Hive and HBase :
+
+*hive supports row formatted  analysis.
+*hbase supports column formatted analysis.
+*Apache Hive is a data warehouse infrastructure built on top of Hadoop. It allows for querying data stored on HDFS for analysis via HQL, an SQL-like language that gets translated to MapReduce jobs. 
+Despite providing SQL functionality, Hive does not provide interactive querying yet - it only runs batch processes on Hadoop.
+*Apache HBase is a NoSQL key/value store which runs on top of HDFS. Unlike Hive, HBase operations run in real-time on its database rather than MapReduce jobs.
+
+ HBase is partitioned to tables, and tables are further split into column families. Column families, which must be declared in the schema, group together a certain set of columns (columns don’t require schema definition).
+ For example, the "message" column family may include the columns: "to", "from", "date", "subject", and "body". Each key/value pair in HBase is defined as a cell, and each key consists of row-key, column family, column, and time-stamp. A row in HBase is a grouping of key/value mappings identified by the row-key. HBase enjoys Hadoop’s infrastructure and scales horizontally using off the shelf servers.
